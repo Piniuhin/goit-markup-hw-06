@@ -341,11 +341,16 @@ img {
     height: 40px;
     padding:11px 12px 11px 40px;
 
-    border: 1px solid /*var(--form-input-border-color)*/;
+    border: 1px solid var(--form-input-border-color);
     border-radius: 4px;
     transition: fill 250ms var(--time-function),
     border-color 250ms var(--time-function);
 }
+/*
+.form-input:hover,
+.form-input:focus {
+    border-color: var(--accent-color);
+}*/
 
 .form-input:hover + .form-icon,
 .form-input:focus + .form-icon{
@@ -360,6 +365,11 @@ img {
     transform: translatey(-50%);
     transition:fill 250ms var(--time-function);
 } 
+/*
+.form-icon:hover,
+.form-icon:focus {
+    fill: var(--accent-color);
+}*/
 
 .form-area{
     padding: 12px 16px;
