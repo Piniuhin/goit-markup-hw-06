@@ -284,12 +284,20 @@ img {
 
 }
 
-.close-btn:hover{
+.close-btn:hover,
+.close-btn:focus {
     box-shadow: var(--close-btn-box-shadow);
 }
 
 .close-icon {
     fill: var(--logo-black-color);
+    transition: fill 250ms var(--time-function);
+}
+
+
+.close-icon:hover,
+.close-icon:focus {
+    fill: var(--accent-color);
 }
 
 /*-------------------------------------------*/
