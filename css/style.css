@@ -281,25 +281,28 @@ img {
     background-color: var(--primary-white-color);
     cursor: pointer;
 
-    transition: box-shadow 250ms var(--time-function) ;
+    transition: box-shadow 250ms var(--time-function),
+                fill 250ms var(--time-function) ;
 
+    fill: var(--logo-black-color);
 }
 
 .close-btn:hover,
 .close-btn:focus {
     box-shadow: var(--close-btn-box-shadow);
+    fill: var(--accent-color);
 }
-
+/*
 .close-icon {
     fill: var(--logo-black-color);
     transition: fill 250ms var(--time-function);
-}
+}*/
 
-
+/*
 .close-icon:hover,
 .close-icon:focus {
     fill: var(--accent-color);
-}
+}*/
 
 /*-------------------------------------------*/
 
@@ -343,14 +346,16 @@ img {
 
     border: 1px solid var(--form-input-border-color);
     border-radius: 4px;
+    
     transition: fill 250ms var(--time-function),
     border-color 250ms var(--time-function);
 }
-/*
-.form-input:hover,
-.form-input:focus {
+
+.input-wrap:hover,
+.input-wrap:focus {
     border-color: var(--accent-color);
-}*/
+    fill: var(--accent-color);
+}
 
 .form-input:hover + .form-icon,
 .form-input:focus + .form-icon{
@@ -362,6 +367,7 @@ img {
     position: absolute;
     left: 12px;
     top: 50%;
+    
     transform: translatey(-50%);
     transition:fill 250ms var(--time-function);
 } 
